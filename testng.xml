@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="testSuite" parallel="false">
+  <test name="DBTest">
+    <classes>
+      <class name="testSuite.DBTest"/>
+    </classes>
+  </test>
+</suite>
