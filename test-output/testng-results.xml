@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="testSuite" duration-ms="13026" started-at="2018-06-19T01:17:29Z" finished-at="2018-06-19T01:17:42Z">
+  <suite name="Default suite" duration-ms="23147" started-at="2018-06-19T22:31:10Z" finished-at="2018-06-19T22:31:33Z">
     <groups>
     </groups>
-    <test name="DBTest" duration-ms="13026" started-at="2018-06-19T01:17:29Z" finished-at="2018-06-19T01:17:42Z">
+    <test name="Default test" duration-ms="23147" started-at="2018-06-19T22:31:10Z" finished-at="2018-06-19T22:31:33Z">
       <class name="testSuite.DBTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testSuite.DBTest@47c62251]" name="beforeClass" is-config="true" duration-ms="6676" started-at="2018-06-18T22:17:29Z" finished-at="2018-06-18T22:17:36Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testSuite.DBTest@6a41eaa2]" name="beforeClass" is-config="true" duration-ms="22368" started-at="2018-06-19T19:31:10Z" finished-at="2018-06-19T19:31:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="openMyBlog()[pri:0, instance:testSuite.DBTest@47c62251]" name="openMyBlog" duration-ms="5290" started-at="2018-06-18T22:17:36Z" finished-at="2018-06-18T22:17:41Z">
+        <test-method status="PASS" signature="openMyBlog()[pri:0, instance:testSuite.DBTest@6a41eaa2]" name="openMyBlog" duration-ms="5" started-at="2018-06-19T19:31:32Z" finished-at="2018-06-19T19:31:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMyBlog -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:testSuite.DBTest@47c62251]" name="afterClass" is-config="true" duration-ms="1046" started-at="2018-06-18T22:17:41Z" finished-at="2018-06-18T22:17:42Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testSuite.DBTest@6a41eaa2]" name="afterClass" is-config="true" duration-ms="759" started-at="2018-06-19T19:31:32Z" finished-at="2018-06-19T19:31:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- testSuite.DBTest -->
-    </test> <!-- DBTest -->
-  </suite> <!-- testSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
