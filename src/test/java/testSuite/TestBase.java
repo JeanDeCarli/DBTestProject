@@ -58,4 +58,16 @@ public class TestBase {
 			}
 	}
   }
+  
+  public void waitAfterDelete(){
+	  String message = this.driver.findElement(By.cssSelector("tbody tr:nth-child(1) td:nth-child(3)")).getText();
+	  for (int i = 0; this.driver.findElement(By.cssSelector("tbody")).getText().contains(message) && 
+			  i < 5; i++) {
+		  try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+	}
+  }
 }

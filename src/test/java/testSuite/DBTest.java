@@ -30,7 +30,7 @@ public class DBTest extends TestBase {
 		.validateCustumerCreation()
 		.goBackToCustomerList()
 		.SearchCustomerByName(customer.getName())
-		.selectSearchedCustomerToBeDeleted()
+		.selectAllCustomerToBeDeleted()
 		.validateDeleteConfirmationMessage()
 		.deleteCustomer()
 		.validateDeletedMessageSuccessfully();

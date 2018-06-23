@@ -37,7 +37,7 @@ public class CustomerIndex extends TestBase{
 	  return this;
   }
   
-  public CustomerIndex selectSearchedCustomerToBeDeleted() {
+  public CustomerIndex selectAllCustomerToBeDeleted() {
 	  WebElement checkBox = getDriver().findElement(By.className("select-all-none"));
 	  checkBox.click();
 	  WebElement deleteButton = getDriver().findElement(By.className("delete-selected-button"));
@@ -55,7 +55,8 @@ public class CustomerIndex extends TestBase{
   }
   
   public CustomerIndex deleteCustomer() {
-	  getDriver().findElement(By.className("delete-multiple-confirmation-button"));
+	  getDriver().findElement(By.className("delete-multiple-confirmation-button")).click();
+	  waitAfterDelete();
 	  
 	  return this;
   }
