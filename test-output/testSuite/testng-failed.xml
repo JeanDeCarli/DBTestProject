@@ -5,8 +5,9 @@
     <classes>
       <class name="testSuite.DBTest">
         <methods>
-          <include name="openMyBlog"/>
+          <include name="deleteCreatedCusomer"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
       </class> <!-- testSuite.DBTest -->
     </classes>

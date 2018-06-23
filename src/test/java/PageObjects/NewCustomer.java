@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Models.Customer;
 import junit.framework.Assert;
@@ -51,13 +49,20 @@ public class NewCustomer extends TestBase {
 	}
 	
 	public NewCustomer validateCustumerCreation() {
-		//WebDriverWait wait = new WebDriverWait(getDriver(), 10);
-		//wait.until(ExpectedConditions.presenceOfElementLocated(By.id("report-success")));
+		WebElement successFeedback = getDriver().findElement(By.id("report-success"));
+		waitElementToBeVisible(successFeedback);
 		
-		
-		Assert.assertTrue(getDriver().findElement(By.id("report-success")).getText()
+		Assert.assertTrue(successFeedback.getText()
 				.contains("Your data has been successfully stored into the database"));
 		
 		return this;
+	}
+	
+	public CustomerIndex goBackToCustomerList() {
+		WebElement backButton = getDriver().findElement(By.cssSelector("#report-success a:nth-child(2)"));
+		waitElementToBeVisible(backButton);
+		backButton.click();
+		
+		return new CustomerIndex(getDriver());
 	}
 }
