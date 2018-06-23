@@ -1,6 +1,6 @@
 {
    "Name":"Teste DBServer",
-   "Last name":"Teste",
+   "LastName":"Teste",
    "ContactFirstName":"seu nome",
    "Phone":"51 9999-9999",
    "AddressLine1":"Av Ipiranga 6681",
@@ -9,6 +9,6 @@
    "State":"RS",
    "PostalCode":"91000-000",
    "Country":"Brasil",
-   "from Employeer":"Fixter",
+   "FromEmployeer":"Fixter",
    "CreditLimit":"200"
 }

@@ -7,10 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 
 public class TestBase {
-	public WebDriver driver = null;
+	private WebDriver driver = null;
 	
 	public TestBase() {
 	}
+	
 	public TestBase(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -23,6 +24,7 @@ public class TestBase {
   public void beforeClass() {
 	  WebDriverManager.chromedriver().setup();
 	  this.driver = new ChromeDriver();
+	  this.driver.manage().window().maximize();
 	  this.driver.get("https://www.grocerycrud.com/demo/bootstrap_theme");
   }
 
